@@ -3,7 +3,7 @@
     <parameter name="suiteOwner" value="spassalacqua"/>
 
     <test verbose="1"
-          name="Login Functionality Feature">
+          name="New WAES Portal Initial Functionalities">
         <classes>
             <class name="com.waes.cucumber.tests.NewWAESPortalInitialFunctionalities">
             </class>
