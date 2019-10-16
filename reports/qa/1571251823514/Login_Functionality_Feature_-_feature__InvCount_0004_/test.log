@@ -1,0 +1,33 @@
+[2019-10-16 03:51:40] [IMessager.java] [1] [INFO]  TEST [Login Functionality Feature - feature (InvCount=0004)] STARTED at [15:51:40 2019-10-16]
+[2019-10-16 03:51:43] [DesktopFactory.java] [1] [INFO] Browser window was maximized
+[2019-10-16 03:51:43] [IMessager.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+[2019-10-16 03:51:46] [DriverListener.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+[2019-10-16 03:51:47] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:51:48] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'usernameTxt'.
+[2019-10-16 03:51:49] [DriverListener.java] [1] [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+[2019-10-16 03:51:49] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'passwordTxt'.
+[2019-10-16 03:51:50] [DriverListener.java] [1] [INFO] PASS: keys 'hero' are sent to element 'passwordTxt'.
+[2019-10-16 03:51:52] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:51:53] [DriverListener.java] [1] [INFO] PASS: element 'profileBtn' is clicked.
+[2019-10-16 03:51:54] [DriverListener.java] [1] [INFO] PASS: element 'logOutLnk' is clicked.
+[2019-10-16 03:51:54] [IMessager.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+[2019-10-16 03:51:54] [DriverListener.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+[2019-10-16 03:51:55] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:51:56] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'usernameTxt'.
+[2019-10-16 03:51:57] [DriverListener.java] [1] [INFO] PASS: keys 'dev' are sent to element 'usernameTxt'.
+[2019-10-16 03:51:57] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'passwordTxt'.
+[2019-10-16 03:51:58] [DriverListener.java] [1] [INFO] PASS: keys 'wizard' are sent to element 'passwordTxt'.
+[2019-10-16 03:51:58] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:51:59] [DriverListener.java] [1] [INFO] PASS: element 'profileBtn' is clicked.
+[2019-10-16 03:52:20] [DriverListener.java] [1] [INFO] PASS: element 'logOutLnk' is clicked.
+[2019-10-16 03:52:21] [IMessager.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+[2019-10-16 03:52:21] [DriverListener.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+[2019-10-16 03:52:22] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:52:23] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'usernameTxt'.
+[2019-10-16 03:52:23] [DriverListener.java] [1] [INFO] PASS: keys 'tester' are sent to element 'usernameTxt'.
+[2019-10-16 03:52:24] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'passwordTxt'.
+[2019-10-16 03:52:24] [DriverListener.java] [1] [INFO] PASS: keys 'maniac' are sent to element 'passwordTxt'.
+[2019-10-16 03:52:25] [DriverListener.java] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2019-10-16 03:52:26] [DriverListener.java] [1] [INFO] PASS: element 'profileBtn' is clicked.
+[2019-10-16 03:52:47] [DriverListener.java] [1] [INFO] PASS: element 'logOutLnk' is clicked.
+[2019-10-16 03:52:47] [IMessager.java] [1] [INFO]  TEST [Login Functionality Feature - feature (InvCount=0004)] PASSED at [15:52:47 2019-10-16]

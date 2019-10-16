@@ -1,0 +1,3477 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Login with valid user authentication",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---successful-and-unsuccessful-login;login-with-valid-user-authentication;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11842585178,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5244247293,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"admin\" and password \"hero\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 38
+                },
+                {
+                  "val": "hero",
+                  "offset": 59
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48323854,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 841061408,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51654332,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Login with valid user authentication",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---successful-and-unsuccessful-login;login-with-valid-user-authentication;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 676498529,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3995681334,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"dev\" and password \"wizard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dev",
+                  "offset": 38
+                },
+                {
+                  "val": "wizard",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43719918,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 725777477,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35383235,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Login with valid user authentication",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---successful-and-unsuccessful-login;login-with-valid-user-authentication;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 813689031,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3990825688,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"tester\" and password \"maniac\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tester",
+                  "offset": 38
+                },
+                {
+                  "val": "maniac",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54375115,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 725490342,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35233608,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Login with invalid user authentication",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---successful-and-unsuccessful-login;login-with-invalid-user-authentication",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 673997291,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3893107753,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user perform login with username \"test\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 38
+                },
+                {
+                  "val": "test",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196639877,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "after login, the message \"Wrong credentials. You can do it, try again!\" is displayed on header status bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wrong credentials. You can do it, try again!",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESLoginSteps.verifyLoginstatus(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: login - Successful and Unsuccessful login",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---successful-and-unsuccessful-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login_functionality_features/LoginFunctionality.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify validation when the username field is empty during login process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---errors-verifications;verify-validation-when-the-username-field-is-empty-during-login-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8361439550,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1017558539,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user click on login button",
+            "match": {
+              "location": "WAESLoginSteps.goToLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1441385461,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "on login page, the user click on Log In button",
+            "match": {
+              "location": "WAESLoginSteps.performLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77796133,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "on login page, \"username\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 16
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESLoginSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Verify validation when the password field is empty during login process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---errors-verifications;verify-validation-when-the-password-field-is-empty-during-login-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 738484565,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 907188984,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on login button",
+            "match": {
+              "location": "WAESLoginSteps.goToLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1331716028,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "on Login page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 59
+                }
+              ],
+              "location": "WAESLoginSteps.inputUsername(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 827859759,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "on login page, the user click on Log In button",
+            "match": {
+              "location": "WAESLoginSteps.performLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55297114,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "on login page, \"password\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 16
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESLoginSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: login - Errors Verifications",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---errors-verifications",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login_functionality_features/LoginFunctionalityErrorVerifications.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Verify Details Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---details-verification;verify-details-information-page-after-successful-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7368664052,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4177276495,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"admin\" and password \"hero\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 38
+                },
+                {
+                  "val": "hero",
+                  "offset": 59
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41734682,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 894654363,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Details button",
+            "match": {
+              "location": "WAESDetailsSteps.theUserClickOnDetailsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75933023,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Details page is displayed",
+            "match": {
+              "location": "WAESDetailsSteps.detailsPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 67041184,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the Name \"Amazing Admin\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amazing Admin",
+                  "offset": 10
+                }
+              ],
+              "location": "WAESDetailsSteps.theNameIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49355859,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the Email address \"a.admin@wearewaes.com\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a.admin@wearewaes.com",
+                  "offset": 19
+                }
+              ],
+              "location": "WAESDetailsSteps.theEmailIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867006038,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43386171,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verify Details Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---details-verification;verify-details-information-page-after-successful-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 736006167,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4133316987,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"dev\" and password \"wizard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dev",
+                  "offset": 38
+                },
+                {
+                  "val": "wizard",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34927363,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 745528210,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Details button",
+            "match": {
+              "location": "WAESDetailsSteps.theUserClickOnDetailsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40823870,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Details page is displayed",
+            "match": {
+              "location": "WAESDetailsSteps.detailsPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49667698,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the Name \"Zuper Dooper Dev\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Zuper Dooper Dev",
+                  "offset": 10
+                }
+              ],
+              "location": "WAESDetailsSteps.theNameIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42414295,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the Email address \"zd.dev@wearewaes.com\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zd.dev@wearewaes.com",
+                  "offset": 19
+                }
+              ],
+              "location": "WAESDetailsSteps.theEmailIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 728508981,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35886653,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Verify Details Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---details-verification;verify-details-information-page-after-successful-login;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 708373692,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4129630389,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"tester\" and password \"maniac\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tester",
+                  "offset": 38
+                },
+                {
+                  "val": "maniac",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32861954,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 723835125,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Details button",
+            "match": {
+              "location": "WAESDetailsSteps.theUserClickOnDetailsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33374228,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Details page is displayed",
+            "match": {
+              "location": "WAESDetailsSteps.detailsPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41812059,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the Name \"Al Skept-Cal Tester\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Al Skept-Cal Tester",
+                  "offset": 10
+                }
+              ],
+              "location": "WAESDetailsSteps.theNameIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42255812,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the Email address \"as.tester@wearewaes.com\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "as.tester@wearewaes.com",
+                  "offset": 19
+                }
+              ],
+              "location": "WAESDetailsSteps.theEmailIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 776241319,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34375936,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: login - Details verification",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---details-verification",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyDetails.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Verify Profile Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---profile-verifications;verify-profile-information-page-after-successful-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7385572344,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5503666555,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"admin\" and password \"hero\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 38
+                },
+                {
+                  "val": "hero",
+                  "offset": 59
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41493695,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 724756193,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Profile button",
+            "match": {
+              "location": "WAESProfileSteps.theUserClickOnProfileButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27891176,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Profile page is displayed",
+            "match": {
+              "location": "WAESProfileSteps.profilePageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48274445,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the question information \"How are you doing, Amazing Admin?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "How are you doing, Amazing Admin?",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theQuestionInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46073393,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the power information \"Your super power: Change the course of a waterfall.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your super power: Change the course of a waterfall.",
+                  "offset": 23
+                }
+              ],
+              "location": "WAESProfileSteps.thePowerInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42347173,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the extended information \"is\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "is",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theExtendedInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 725962529,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39822163,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Verify Profile Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---profile-verifications;verify-profile-information-page-after-successful-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 744396454,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4142529522,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"dev\" and password \"wizard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dev",
+                  "offset": 38
+                },
+                {
+                  "val": "wizard",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34724132,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 709012753,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Profile button",
+            "match": {
+              "location": "WAESProfileSteps.theUserClickOnProfileButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28754443,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Profile page is displayed",
+            "match": {
+              "location": "WAESProfileSteps.profilePageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41049475,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the question information \"How are you doing, Zuper Dooper Dev?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "How are you doing, Zuper Dooper Dev?",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theQuestionInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42139281,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the power information \"Your super power: Debug a repellent factory storage.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your super power: Debug a repellent factory storage.",
+                  "offset": 23
+                }
+              ],
+              "location": "WAESProfileSteps.thePowerInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20056121693,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the extended information \"is not\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "is not",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theExtendedInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 945515812,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44474111,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Verify Profile Information Page after successful login",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---profile-verifications;verify-profile-information-page-after-successful-login;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 687626378,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3870204135,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform login with username \"tester\" and password \"maniac\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tester",
+                  "offset": 38
+                },
+                {
+                  "val": "maniac",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESLoginSteps.performLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40111628,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after login, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESLoginSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 755893943,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Profile button",
+            "match": {
+              "location": "WAESProfileSteps.theUserClickOnProfileButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39821231,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Profile page is displayed",
+            "match": {
+              "location": "WAESProfileSteps.profilePageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68421387,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the question information \"How are you doing, Al Skept-Cal Tester?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "How are you doing, Al Skept-Cal Tester?",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theQuestionInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48680908,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the power information \"Your super power: Voltage AND Current.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your super power: Voltage AND Current.",
+                  "offset": 23
+                }
+              ],
+              "location": "WAESProfileSteps.thePowerInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20049332553,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the extended information \"is not\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "is not",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theExtendedInformationIsDisplayed(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 785667807,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39605414,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: login - Profile Verifications",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-login---profile-verifications",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyProfile.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Sign Up with a new valid user",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---successful-and-unsuccessful-signup;sign-up-with-a-new-valid-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7536889758,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10007866825,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform SignUp using: username \"test\", password \"test\", name \"test\", email \"test@test.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 58
+                },
+                {
+                  "val": "test",
+                  "offset": 71
+                },
+                {
+                  "val": "test@test.com",
+                  "offset": 85
+                },
+                {
+                  "val": "25",
+                  "offset": 106
+                },
+                {
+                  "val": "April",
+                  "offset": 118
+                },
+                {
+                  "val": "1984",
+                  "offset": 132
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48696289,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after signUp, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESSignUpSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45249746,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "after signUp, the Welcome message \"Welcome to your new profile page, test!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your new profile page, test!",
+                  "offset": 35
+                }
+              ],
+              "location": "WAESSignUpSteps.theWelcomeMessageIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 730368827,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40547923,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Verify Sign Up error verification when the user is already registered (username/email)",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---successful-and-unsuccessful-signup;verify-sign-up-error-verification-when-the-user-is-already-registered-(username/email);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 755997890,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9460338651,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user perform SignUp using: username \"admin\", password \"test\", name \"New User\", email \"new@wearewaes.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 59
+                },
+                {
+                  "val": "New User",
+                  "offset": 72
+                },
+                {
+                  "val": "new@wearewaes.com",
+                  "offset": 90
+                },
+                {
+                  "val": "25",
+                  "offset": 115
+                },
+                {
+                  "val": "April",
+                  "offset": 127
+                },
+                {
+                  "val": "1984",
+                  "offset": 141
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220810427,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "unsuccessful SignUp error is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.unsuccessfulSignUp()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Verify Sign Up error verification when the user is already registered (username/email)",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---successful-and-unsuccessful-signup;verify-sign-up-error-verification-when-the-user-is-already-registered-(username/email);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 693490257,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9055986516,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user perform SignUp using: username \"new\", password \"test\", name \"New User\", email \"as.tester@wearewaes.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 57
+                },
+                {
+                  "val": "New User",
+                  "offset": 70
+                },
+                {
+                  "val": "as.tester@wearewaes.com",
+                  "offset": 88
+                },
+                {
+                  "val": "25",
+                  "offset": 119
+                },
+                {
+                  "val": "April",
+                  "offset": 131
+                },
+                {
+                  "val": "1984",
+                  "offset": 145
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 210325366,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "unsuccessful SignUp error is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.unsuccessfulSignUp()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Verify Sign Up error verification when the user is already registered (username/email)",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---successful-and-unsuccessful-signup;verify-sign-up-error-verification-when-the-user-is-already-registered-(username/email);;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 675776498,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9009539755,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user perform SignUp using: username \"admin\", password \"test\", name \"New User\", email \"as.tester@wearewaes.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 59
+                },
+                {
+                  "val": "New User",
+                  "offset": 72
+                },
+                {
+                  "val": "as.tester@wearewaes.com",
+                  "offset": 90
+                },
+                {
+                  "val": "25",
+                  "offset": 121
+                },
+                {
+                  "val": "April",
+                  "offset": 133
+                },
+                {
+                  "val": "1984",
+                  "offset": 147
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190969442,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "unsuccessful SignUp error is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.unsuccessfulSignUp()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---successful-and-unsuccessful-signup",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify validation when the username field is empty during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-username-field-is-empty-during-signup-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7921742868,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 834018695,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1887092383,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79797216,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "on SignUp page, \"username\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 17
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 61
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Verify validation when the password field is empty during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-password-field-is-empty-during-signup-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1143503728,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 904075255,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45294495,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1250969777,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1352267102,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64783731,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "on SignUp page, \"password\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 17
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 61
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Verify validation when the name field is empty during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-name-field-is-empty-during-signup-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 823425026,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 796752307,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37406693,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1184734993,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1246165406,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1371952112,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60969880,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "on SignUp page, \"name\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 17
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Verify validation when the email field doesn\u0027t have the correct format during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-email-field-doesn\u0027t-have-the-correct-format-during-signup-process;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 682789379,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 772981228,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34997283,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1206334386,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1254677818,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1156415912,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1135049116,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "on SignUp page, the user input into email box the value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24254920,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "on SignUp page, \"email\" field is validated with the text \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 17
+                },
+                {
+                  "val": "Please fill out this field.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Verify validation when the email field doesn\u0027t have the correct format during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-email-field-doesn\u0027t-have-the-correct-format-during-signup-process;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 649168569,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 781989597,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33305242,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1229720912,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1211079094,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1191035166,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1377190447,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "on SignUp page, the user input into email box the value \"new\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22888235,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "on SignUp page, \"email\" field is validated with the text \"Please include an \u0027@\u0027 in the email address. \u0027new\u0027 is missing an \u0027@\u0027.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 17
+                },
+                {
+                  "val": "Please include an \u0027@\u0027 in the email address. \u0027new\u0027 is missing an \u0027@\u0027.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Verify validation when the email field doesn\u0027t have the correct format during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-email-field-doesn\u0027t-have-the-correct-format-during-signup-process;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 670465912,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 779205422,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37878880,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1325061598,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1222608279,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1191089236,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1542652486,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "on SignUp page, the user input into email box the value \"new@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new@",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23920240,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "on SignUp page, \"email\" field is validated with the text \"Please enter a part following \u0027@\u0027. \u0027new@\u0027 is incomplete.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 17
+                },
+                {
+                  "val": "Please enter a part following \u0027@\u0027. \u0027new@\u0027 is incomplete.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Verify validation when the email field doesn\u0027t have the correct format during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-email-field-doesn\u0027t-have-the-correct-format-during-signup-process;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 701128214,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 789500302,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34773076,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1174579017,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1219694519,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1256803356,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1485977967,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "on SignUp page, the user input into email box the value \"new@.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new@.com",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21181744,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "on SignUp page, \"email\" field is validated with the text \"\u0027.\u0027 is used at a wrong position in \u0027.com\u0027.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 17
+                },
+                {
+                  "val": "\u0027.\u0027 is used at a wrong position in \u0027.com\u0027.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Verify validation when the email field doesn\u0027t have the correct format during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-when-the-email-field-doesn\u0027t-have-the-correct-format-during-signup-process;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 660735977,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 785829553,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31292039,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1200982782,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1265797744,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1391358844,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1298586051,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "on SignUp page, the user input into email box the value \"new@new.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new@new.",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23959861,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "on SignUp page, \"email\" field is validated with the text \"\u0027.\u0027 is used at a wrong position in \u0027new.\u0027.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email",
+                  "offset": 17
+                },
+                {
+                  "val": "\u0027.\u0027 is used at a wrong position in \u0027new.\u0027.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Verify validation in the date fields during SignUp process",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications;verify-validation-in-the-date-fields-during-signup-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 768810323,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 768013712,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the user click on SignUp button",
+            "match": {
+              "location": "WAESSignUpSteps.goSignUpPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38882917,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "SignUp Page is displayed",
+            "match": {
+              "location": "WAESSignUpSteps.signupPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1316925352,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "on SignUp page, the user input into username box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.inputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1201207456,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "on SignUp page, the user input into password box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 60
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1201635360,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "on SignUp page, the user input into name box the value \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1328786886,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "on SignUp page, the user input into email box the value \"test@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1390844240,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47891754,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "on SignUp page, \"day\" field is validated with the text \"Please select an item in the list.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "day",
+                  "offset": 17
+                },
+                {
+                  "val": "Please select an item in the list.",
+                  "offset": 56
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 743501957,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "on SignUp page, the user select as day the value \"25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 50
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserSelectAsDayTheValue(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 761166772,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40757680,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "on SignUp page, \"month\" field is validated with the text \"Please select an item in the list.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "month",
+                  "offset": 17
+                },
+                {
+                  "val": "Please select an item in the list.",
+                  "offset": 58
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 688805214,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "on SignUp page, the user select as month the value \"April\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "April",
+                  "offset": 52
+                }
+              ],
+              "location": "WAESSignUpSteps.onSignUpPageTheUserSelectAsMonthTheValue(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 633694085,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "on SignUp page, the user click on Submit button",
+            "match": {
+              "location": "WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44797136,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "on SignUp page, \"year\" field is validated with the text \"Please select an item in the list.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "year",
+                  "offset": 17
+                },
+                {
+                  "val": "Please select an item in the list.",
+                  "offset": 57
+                }
+              ],
+              "location": "WAESSignUpSteps.verifyField(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: SignUp - Errors Verifications",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---errors-verifications",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify Details Information Page after successful SignUp",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---verify-details;verify-details-information-page-after-successful-signup",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7615891762,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9799253545,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform SignUp using: username \"test\", password \"test\", name \"test\", email \"test@test.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 58
+                },
+                {
+                  "val": "test",
+                  "offset": 71
+                },
+                {
+                  "val": "test@test.com",
+                  "offset": 85
+                },
+                {
+                  "val": "25",
+                  "offset": 106
+                },
+                {
+                  "val": "April",
+                  "offset": 118
+                },
+                {
+                  "val": "1984",
+                  "offset": 132
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56626508,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after signUp, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESSignUpSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 730490020,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Details button",
+            "match": {
+              "location": "WAESDetailsSteps.theUserClickOnDetailsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37926891,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Details page is displayed",
+            "match": {
+              "location": "WAESDetailsSteps.detailsPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46739022,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the Name \"test\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 10
+                }
+              ],
+              "location": "WAESDetailsSteps.theNameIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46244927,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the Email address \"test@test.com\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 19
+                }
+              ],
+              "location": "WAESDetailsSteps.theEmailIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 899770106,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53456844,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: SignUp - Verify Details",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---verify-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/signup_functionality_features/SignUpFunctionalityVerifyDetails.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify Profile Information Page after successful SignUp",
+        "description": "",
+        "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---verify-profile;verify-profile-information-page-after-successful-signup",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8200801459,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the WAES\u0027s portal page",
+            "match": {
+              "location": "WAESHomeSteps.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10359713014,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user perform SignUp using: username \"test\", password \"test\", name \"test\", email \"test@test.com\", day \"25\", month \"April\", year \"1984\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 41
+                },
+                {
+                  "val": "test",
+                  "offset": 58
+                },
+                {
+                  "val": "test",
+                  "offset": 71
+                },
+                {
+                  "val": "test@test.com",
+                  "offset": 85
+                },
+                {
+                  "val": "25",
+                  "offset": 106
+                },
+                {
+                  "val": "April",
+                  "offset": 118
+                },
+                {
+                  "val": "1984",
+                  "offset": 132
+                }
+              ],
+              "location": "WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49634137,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "after signUp, page \u0027Your Profile\u0027 is opened",
+            "match": {
+              "location": "WAESSignUpSteps.pageProfileShouldBeOpen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 698819020,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user click on Profile button",
+            "match": {
+              "location": "WAESProfileSteps.theUserClickOnProfileButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35215896,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Profile page is displayed",
+            "match": {
+              "location": "WAESProfileSteps.profilePageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55227194,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the question information \"How are you doing, test?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "How are you doing, test?",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theQuestionInformationIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46223019,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the power information \"Your super power: You have no super powers yet. \u003d[.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your super power: You have no super powers yet. \u003d[.",
+                  "offset": 23
+                }
+              ],
+              "location": "WAESProfileSteps.thePowerInformationIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20059296484,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the extended information \"is not\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "is not",
+                  "offset": 26
+                }
+              ],
+              "location": "WAESProfileSteps.theExtendedInformationIsDisplayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 755996491,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user click on Logout link",
+            "match": {
+              "location": "WAESHomeSteps.logoutSession()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37983758,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "after logout, Login Page is displayed",
+            "match": {
+              "location": "WAESHomeSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New WAES\u0027s portal, and the initial functionality: SignUp - Verify Profile",
+    "description": "",
+    "id": "new-waes\u0027s-portal,-and-the-initial-functionality:-signup---verify-profile",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/signup_functionality_features/SignUpFunctionalityVerifyProfile.feature"
+  }
+]

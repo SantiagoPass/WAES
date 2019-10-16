@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="New portal for WAES heroes" annotations="JDK">
+    <parameter name="suiteOwner" value="spassalacqua"/>
+
+    <test verbose="1"
+          name="Login Functionality Feature">
+        <classes>
+            <class name="com.waes.cucumber.tests.NewWAESPortalInitialFunctionalities">
+            </class>
+        </classes>
+    </test>
+
+</suite>

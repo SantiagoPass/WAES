@@ -1,0 +1,6 @@
+com\waes\cucumber\steps\WAESDetailsSteps.class
+com\waes\cucumber\steps\WAESHomeSteps.class
+com\waes\cucumber\steps\WAESSignUpSteps.class
+com\waes\cucumber\steps\WAESProfileSteps.class
+com\waes\cucumber\tests\NewWAESPortalInitialFunctionalities.class
+com\waes\cucumber\steps\WAESLoginSteps.class

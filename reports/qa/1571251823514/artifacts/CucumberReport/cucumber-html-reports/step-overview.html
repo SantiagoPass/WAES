@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Html Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Cucumber Test Results</td>
+                          <td></td>
+                        <td>16 Oct 2019, 15:55</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">WAESDetailsSteps.detailsPageIsDisplayed()</td>
+                <td>4</td>
+                <td class="duration" data-value="188058012">188ms</td>
+                <td class="duration" data-value="47014503">047ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESDetailsSteps.theEmailIsDisplayed(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="180270893">180ms</td>
+                <td class="duration" data-value="45067723">045ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESDetailsSteps.theNameIsDisplayed(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="205259963">205ms</td>
+                <td class="duration" data-value="51314990">051ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESDetailsSteps.theUserClickOnDetailsButton()</td>
+                <td>4</td>
+                <td class="duration" data-value="3094507718">3s 094ms</td>
+                <td class="duration" data-value="773626929">773ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESHomeSteps.isLoginPageDisplayed()</td>
+                <td>12</td>
+                <td class="duration" data-value="491810148">491ms</td>
+                <td class="duration" data-value="40984179">040ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESHomeSteps.logoutSession()</td>
+                <td>12</td>
+                <td class="duration" data-value="9507367137">9s 507ms</td>
+                <td class="duration" data-value="792280594">792ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESHomeSteps.userIsOnHomePage()</td>
+                <td>27</td>
+                <td class="duration" data-value="80237950851">1m 20s 237ms</td>
+                <td class="duration" data-value="2971775957">2s 971ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.goToLoginPage()</td>
+                <td>2</td>
+                <td class="duration" data-value="1924747523">1s 924ms</td>
+                <td class="duration" data-value="962373761">962ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.inputUsername(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1331716028">1s 331ms</td>
+                <td class="duration" data-value="1331716028">1s 331ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.pageProfileShouldBeOpen()</td>
+                <td>9</td>
+                <td class="duration" data-value="372272341">372ms</td>
+                <td class="duration" data-value="41363593">041ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.performLogin()</td>
+                <td>2</td>
+                <td class="duration" data-value="2269245220">2s 269ms</td>
+                <td class="duration" data-value="1134622610">1s 134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.performLogin(String,String)</td>
+                <td>10</td>
+                <td class="duration" data-value="43080486151">43s 080ms</td>
+                <td class="duration" data-value="4308048615">4s 308ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.verifyField(String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="133093247">133ms</td>
+                <td class="duration" data-value="66546623">066ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESLoginSteps.verifyLoginstatus(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="196639877">196ms</td>
+                <td class="duration" data-value="196639877">196ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESProfileSteps.profilePageIsDisplayed()</td>
+                <td>4</td>
+                <td class="duration" data-value="131682746">131ms</td>
+                <td class="duration" data-value="32920686">032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESProfileSteps.theExtendedInformationIsDisplayed(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="60207097903">1m 207ms</td>
+                <td class="duration" data-value="15051774475">15s 051ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESProfileSteps.thePowerInformationIsDisplayed(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="183116601">183ms</td>
+                <td class="duration" data-value="45779150">045ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESProfileSteps.theQuestionInformationIsDisplayed(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="212972501">212ms</td>
+                <td class="duration" data-value="53243125">053ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESProfileSteps.theUserClickOnProfileButton()</td>
+                <td>4</td>
+                <td class="duration" data-value="2888481909">2s 888ms</td>
+                <td class="duration" data-value="722120477">722ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.goSignUpPage()</td>
+                <td>9</td>
+                <td class="duration" data-value="7212366071">7s 212ms</td>
+                <td class="duration" data-value="801374007">801ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.inputUsername(String)</td>
+                <td>8</td>
+                <td class="duration" data-value="9889308817">9s 889ms</td>
+                <td class="duration" data-value="1236163602">1s 236ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()</td>
+                <td>6</td>
+                <td class="duration" data-value="7397016694">7s 397ms</td>
+                <td class="duration" data-value="1232836115">1s 232ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="8168242953">8s 168ms</td>
+                <td class="duration" data-value="1361373825">1s 361ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="7388337874">7s 388ms</td>
+                <td class="duration" data-value="1231389645">1s 231ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)</td>
+                <td>7</td>
+                <td class="duration" data-value="8621230316">8s 621ms</td>
+                <td class="duration" data-value="1231604330">1s 231ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserSelectAsDayTheValue(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="743501957">743ms</td>
+                <td class="duration" data-value="743501957">743ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.onSignUpPageTheUserSelectAsMonthTheValue(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="688805214">688ms</td>
+                <td class="duration" data-value="688805214">688ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.pageProfileShouldBeOpen()</td>
+                <td>3</td>
+                <td class="duration" data-value="154956934">154ms</td>
+                <td class="duration" data-value="51652311">051ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)</td>
+                <td>6</td>
+                <td class="duration" data-value="57692698306">57s 692ms</td>
+                <td class="duration" data-value="9615449717">9s 615ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.signupPageIsDisplayed()</td>
+                <td>8</td>
+                <td class="duration" data-value="293830625">293ms</td>
+                <td class="duration" data-value="36728828">036ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.theWelcomeMessageIsDisplayed(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="45249746">045ms</td>
+                <td class="duration" data-value="45249746">045ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.unsuccessfulSignUp()</td>
+                <td>3</td>
+                <td class="duration" data-value="622105235">622ms</td>
+                <td class="duration" data-value="207368411">207ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WAESSignUpSteps.verifyField(String,String)</td>
+                <td>11</td>
+                <td class="duration" data-value="455202397">455ms</td>
+                <td class="duration" data-value="41382036">041ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot>
+            <tr>
+              <td>33</td>
+              <td>190</td>
+              <td class="duration">5m 16s 209ms</td>
+              <td class="duration">1s 664ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

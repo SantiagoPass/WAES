@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+WAES Tester Assignment,com.waes.gui.components,HeaderMenu,9,64,0,0,2,18,1,7,1,7
+WAES Tester Assignment,com.waes.gui.pages,ProfilePage,3,20,0,0,1,6,1,5,1,5
+WAES Tester Assignment,com.waes.gui.pages,LoginPage,3,45,0,0,1,13,1,7,1,7
+WAES Tester Assignment,com.waes.gui.pages,SignUpPage,3,85,0,0,1,26,1,17,1,17
+WAES Tester Assignment,com.waes.gui.pages,HomePage,0,7,0,0,0,3,0,2,0,2
+WAES Tester Assignment,com.waes.gui.pages,DetailsPage,3,16,0,0,1,5,1,4,1,4

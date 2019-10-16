@@ -1,0 +1,503 @@
+2019-10-15 21:17:00 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://waesworks.bitbucket.io/
+env=TEST
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=
+max_driver_count=3
+custom_capabilities=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+smart_screenshot=false
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_local_storage=.
+hockeyapp_token=
+hockeyapp_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=default
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2019-10-15 21:17:01 Messager [INFO]  TEST [Login Functionality Feature - feature] STARTED at [21:17:01 2019-10-15]
+2019-10-15 21:17:07 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:17:07 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:09 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:11 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:12 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:13 DriverListener [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+2019-10-15 21:17:14 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:17:15 DriverListener [INFO] PASS: keys 'hero' are sent to element 'passwordTxt'.
+2019-10-15 21:17:15 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:16 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:17:17 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:17 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:18 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:19 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:20 DriverListener [INFO] PASS: keys 'dev' are sent to element 'usernameTxt'.
+2019-10-15 21:17:20 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:17:21 DriverListener [INFO] PASS: keys 'wizard' are sent to element 'passwordTxt'.
+2019-10-15 21:17:22 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:22 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:17:23 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:23 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:24 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:25 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:25 DriverListener [INFO] PASS: keys 'tester' are sent to element 'usernameTxt'.
+2019-10-15 21:17:26 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:17:27 DriverListener [INFO] PASS: keys 'maniac' are sent to element 'passwordTxt'.
+2019-10-15 21:17:27 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:28 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:17:29 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:29 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:30 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:30 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:31 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:17:32 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:17:32 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:17:33 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:34 Messager [INFO]  TEST [Login Functionality Feature - feature] PASSED at [21:17:34 2019-10-15]
+2019-10-15 21:17:34 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0002)] STARTED at [21:17:34 2019-10-15]
+2019-10-15 21:17:38 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:17:38 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:40 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:41 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:42 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:43 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:43 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:44 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:45 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:45 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:17:46 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:47 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0002)] PASSED at [21:17:47 2019-10-15]
+2019-10-15 21:17:47 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0003)] STARTED at [21:17:47 2019-10-15]
+2019-10-15 21:17:51 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:17:51 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:17:53 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:17:54 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:55 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:17:56 DriverListener [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+2019-10-15 21:17:56 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:17:57 DriverListener [INFO] PASS: keys 'hero' are sent to element 'passwordTxt'.
+2019-10-15 21:17:58 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:17:59 DriverListener [INFO] PASS: element 'detailsBtn' is clicked.
+2019-10-15 21:18:00 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:18:01 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:18:01 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:18:02 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:03 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:18:03 DriverListener [INFO] PASS: keys 'dev' are sent to element 'usernameTxt'.
+2019-10-15 21:18:04 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:18:05 DriverListener [INFO] PASS: keys 'wizard' are sent to element 'passwordTxt'.
+2019-10-15 21:18:05 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:06 DriverListener [INFO] PASS: element 'detailsBtn' is clicked.
+2019-10-15 21:18:07 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:18:08 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:18:08 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:18:09 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:09 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:18:10 DriverListener [INFO] PASS: keys 'tester' are sent to element 'usernameTxt'.
+2019-10-15 21:18:11 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:18:11 DriverListener [INFO] PASS: keys 'maniac' are sent to element 'passwordTxt'.
+2019-10-15 21:18:12 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:13 DriverListener [INFO] PASS: element 'detailsBtn' is clicked.
+2019-10-15 21:18:14 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:18:15 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0003)] PASSED at [21:18:15 2019-10-15]
+2019-10-15 21:18:15 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0004)] STARTED at [21:18:15 2019-10-15]
+2019-10-15 21:18:18 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:18:18 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:18:20 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:18:21 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:22 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:18:23 DriverListener [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+2019-10-15 21:18:23 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:18:24 DriverListener [INFO] PASS: keys 'hero' are sent to element 'passwordTxt'.
+2019-10-15 21:18:25 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:26 DriverListener [INFO] PASS: element 'profileBtn' is clicked.
+2019-10-15 21:18:27 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:18:28 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:18:28 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:18:29 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:29 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:18:30 DriverListener [INFO] PASS: keys 'dev' are sent to element 'usernameTxt'.
+2019-10-15 21:18:31 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:18:31 DriverListener [INFO] PASS: keys 'wizard' are sent to element 'passwordTxt'.
+2019-10-15 21:18:32 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:33 DriverListener [INFO] PASS: element 'profileBtn' is clicked.
+2019-10-15 21:18:54 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:18:54 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:18:55 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:18:55 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:56 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:18:57 DriverListener [INFO] PASS: keys 'tester' are sent to element 'usernameTxt'.
+2019-10-15 21:18:57 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:18:58 DriverListener [INFO] PASS: keys 'maniac' are sent to element 'passwordTxt'.
+2019-10-15 21:18:59 DriverListener [INFO] PASS: element 'loginBtn' is clicked.
+2019-10-15 21:18:59 DriverListener [INFO] PASS: element 'profileBtn' is clicked.
+2019-10-15 21:19:20 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:19:21 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0004)] PASSED at [21:19:21 2019-10-15]
+2019-10-15 21:19:21 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0005)] STARTED at [21:19:21 2019-10-15]
+2019-10-15 21:19:25 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:19:25 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:19:27 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:19:28 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:19:29 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:19:30 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:19:30 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:19:31 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:19:32 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:19:32 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:19:33 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:19:34 DriverListener [INFO] PASS: keys 'test@test.com' are sent to element 'emailTxt'.
+2019-10-15 21:19:34 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:19:35 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:19:36 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:19:36 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:19:37 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 06feb461a9d4b951fe1b565d35a...}
+Session ID: 06feb461a9d4b951fe1b565d35a7c6a7
+2019-10-15 21:19:38 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:19:39 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:19:39 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:19:40 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:19:40 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:19:41 DriverListener [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+2019-10-15 21:19:42 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:19:42 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:19:43 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:19:44 DriverListener [INFO] PASS: keys 'New User' are sent to element 'nameTxt'.
+2019-10-15 21:19:44 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:19:45 DriverListener [INFO] PASS: keys 'new@wearewaes.com' are sent to element 'emailTxt'.
+2019-10-15 21:19:46 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:19:46 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:19:47 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:19:48 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:19:49 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 06feb461a9d4b951fe1b565d35a...}
+Session ID: 06feb461a9d4b951fe1b565d35a7c6a7
+2019-10-15 21:19:49 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:19:50 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:19:50 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:19:51 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:19:51 DriverListener [INFO] PASS: keys 'new' are sent to element 'usernameTxt'.
+2019-10-15 21:19:52 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:19:53 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:19:53 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:19:54 DriverListener [INFO] PASS: keys 'New User' are sent to element 'nameTxt'.
+2019-10-15 21:19:55 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:19:55 DriverListener [INFO] PASS: keys 'as.tester@wearewaes.com' are sent to element 'emailTxt'.
+2019-10-15 21:19:56 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:19:57 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:19:58 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:19:58 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:19:59 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 06feb461a9d4b951fe1b565d35a...}
+Session ID: 06feb461a9d4b951fe1b565d35a7c6a7
+2019-10-15 21:20:00 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:00 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:01 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:01 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:02 DriverListener [INFO] PASS: keys 'admin' are sent to element 'usernameTxt'.
+2019-10-15 21:20:03 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:03 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:04 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:20:04 DriverListener [INFO] PASS: keys 'New User' are sent to element 'nameTxt'.
+2019-10-15 21:20:05 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:20:06 DriverListener [INFO] PASS: keys 'as.tester@wearewaes.com' are sent to element 'emailTxt'.
+2019-10-15 21:20:07 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:20:07 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:20:08 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:20:09 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:20:10 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 06feb461a9d4b951fe1b565d35a...}
+Session ID: 06feb461a9d4b951fe1b565d35a7c6a7
+2019-10-15 21:20:11 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0005)] PASSED at [21:20:11 2019-10-15]
+2019-10-15 21:20:11 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0006)] STARTED at [21:20:11 2019-10-15]
+2019-10-15 21:20:15 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:20:15 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:17 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:18 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:18 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:20:20 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ee0b60c00f015fd020823a7f902...}
+Session ID: ee0b60c00f015fd020823a7f90222172
+2019-10-15 21:20:20 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:20 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:21 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:22 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:23 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:24 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:20:25 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ee0b60c00f015fd020823a7f902...}
+Session ID: ee0b60c00f015fd020823a7f90222172
+2019-10-15 21:20:25 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:26 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:26 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:27 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:28 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:28 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:29 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:30 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:20:31 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ee0b60c00f015fd020823a7f902...}
+Session ID: ee0b60c00f015fd020823a7f90222172
+2019-10-15 21:20:31 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:31 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:32 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:33 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:33 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:34 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:35 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:35 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:20:36 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:20:36 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:20:37 DriverListener [INFO] PASS: keys '' are sent to element 'emailTxt'.
+2019-10-15 21:20:38 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:38 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:39 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:39 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:40 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:40 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:41 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:42 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:20:42 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:20:43 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:20:44 DriverListener [INFO] PASS: keys 'new' are sent to element 'emailTxt'.
+2019-10-15 21:20:44 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:44 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:45 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:46 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:46 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:47 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:48 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:48 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:20:49 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:20:50 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:20:50 DriverListener [INFO] PASS: keys 'new@' are sent to element 'emailTxt'.
+2019-10-15 21:20:51 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:51 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:52 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:20:53 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:20:53 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:20:54 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:20:55 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:20:55 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:20:56 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:20:57 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:20:57 DriverListener [INFO] PASS: keys 'new@.com' are sent to element 'emailTxt'.
+2019-10-15 21:20:58 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:20:58 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:20:59 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:21:00 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:21:00 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:21:01 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:21:02 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:21:02 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:21:03 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:21:03 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:21:04 DriverListener [INFO] PASS: keys 'new@new.' are sent to element 'emailTxt'.
+2019-10-15 21:21:05 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:21:05 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:21:06 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:21:06 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:21:07 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:21:08 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:21:08 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:21:09 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:21:09 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:21:10 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:21:11 DriverListener [INFO] PASS: keys 'test@test.com' are sent to element 'emailTxt'.
+2019-10-15 21:21:11 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:21:13 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ee0b60c00f015fd020823a7f902...}
+Session ID: ee0b60c00f015fd020823a7f90222172
+2019-10-15 21:21:13 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:21:14 DriverListener [INFO] PASS: element 'submitBtn' is clicked.
+2019-10-15 21:21:14 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:21:15 DriverListener [INFO] PASS: element 'submitBtn' is clicked.
+2019-10-15 21:21:16 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0006)] PASSED at [21:21:16 2019-10-15]
+2019-10-15 21:21:16 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0007)] STARTED at [21:21:16 2019-10-15]
+2019-10-15 21:21:20 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:21:20 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:21:22 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:21:23 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:21:24 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:21:24 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:21:25 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:21:25 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:21:26 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:21:27 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:21:27 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:21:28 DriverListener [INFO] PASS: keys 'test@test.com' are sent to element 'emailTxt'.
+2019-10-15 21:21:29 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:21:30 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:21:30 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:21:31 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:21:32 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: c99114fba2c56664004d2eeee1f...}
+Session ID: c99114fba2c56664004d2eeee1f460bd
+2019-10-15 21:21:32 DriverListener [INFO] PASS: element 'detailsBtn' is clicked.
+2019-10-15 21:21:33 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:21:34 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0007)] PASSED at [21:21:34 2019-10-15]
+2019-10-15 21:21:34 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0008)] STARTED at [21:21:34 2019-10-15]
+2019-10-15 21:21:38 DesktopFactory [INFO] Browser window was maximized
+2019-10-15 21:21:38 Messager [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+2019-10-15 21:21:41 DriverListener [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+2019-10-15 21:21:41 DriverListener [INFO] PASS: element 'signupBtn' is clicked.
+2019-10-15 21:21:42 DriverListener [INFO] PASS: keys cleared in element 'usernameTxt'.
+2019-10-15 21:21:43 DriverListener [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+2019-10-15 21:21:43 DriverListener [INFO] PASS: keys cleared in element 'passwordTxt'.
+2019-10-15 21:21:44 DriverListener [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+2019-10-15 21:21:45 DriverListener [INFO] PASS: keys cleared in element 'nameTxt'.
+2019-10-15 21:21:45 DriverListener [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+2019-10-15 21:21:46 DriverListener [INFO] PASS: keys cleared in element 'emailTxt'.
+2019-10-15 21:21:47 DriverListener [INFO] PASS: keys 'test@test.com' are sent to element 'emailTxt'.
+2019-10-15 21:21:48 DriverListener [INFO] PASS: text '25' was selected in 'dayCmb'.
+2019-10-15 21:21:48 DriverListener [INFO] PASS: text 'April' was selected in 'monthCmb'.
+2019-10-15 21:21:49 DriverListener [INFO] PASS: text '1984' was selected in 'yearCmb'.
+2019-10-15 21:21:50 DriverListener [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+2019-10-15 21:21:51 ExtendedWebElement [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.9.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: da2f21dc1243e0478757c01ab54...}
+Session ID: da2f21dc1243e0478757c01ab540406b
+2019-10-15 21:21:52 DriverListener [INFO] PASS: element 'profileBtn' is clicked.
+2019-10-15 21:22:13 DriverListener [INFO] PASS: element 'logOutLnk' is clicked.
+2019-10-15 21:22:13 Messager [INFO]  TEST [Login Functionality Feature - feature (InvCount=0008)] PASSED at [21:22:13 2019-10-15]
+2019-10-15 21:22:14 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2019-10-15 21:22:14 CucumberRunner [INFO] Report json: cucumber-core-test-report.json
+2019-10-15 21:22:18 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2019-10-15 21:22:18 Messager [INFO] RESULT #1: TEST [Login Functionality Feature - feature] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #2: TEST [Login Functionality Feature - feature (InvCount=0002)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0002_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0002_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #3: TEST [Login Functionality Feature - feature (InvCount=0003)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0003_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0003_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #4: TEST [Login Functionality Feature - feature (InvCount=0004)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0004_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0004_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #5: TEST [Login Functionality Feature - feature (InvCount=0005)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0005_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0005_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #6: TEST [Login Functionality Feature - feature (InvCount=0006)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0006_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0006_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #7: TEST [Login Functionality Feature - feature (InvCount=0007)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0007_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0007_/test.log]
+2019-10-15 21:22:18 Messager [INFO] RESULT #8: TEST [Login Functionality Feature - feature (InvCount=0008)] PASS [screenshots=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0008_/report.html | log=file://C:\Users\spassalacqua\Documents\GitHub\WAES\.\reports\qa\1571185020243/Login_Functionality_Feature_-_feature__InvCount_0008_/test.log]

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="27" time="316.209629">
+<testcase classname="New WAES's portal, and the initial functionality: login - Successful and Unsuccessful login" name="Login with valid user authentication" time="18.027872">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "admin" and password "hero".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Successful and Unsuccessful login" name="Login with valid user authentication 2" time="5.47706">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "dev" and password "wizard".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Successful and Unsuccessful login" name="Login with valid user authentication 3" time="5.619614">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "tester" and password "maniac"....passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Successful and Unsuccessful login" name="Login with invalid user authentication" time="4.763745">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "test" and password "test"........passed
+Then after login, the message "Wrong credentials. You can do it, try again!" is displayed on header status bar.passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Errors Verifications" name="Verify validation when the username field is empty during login process" time="10.89818">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on login button.........................................passed
+And on login page, the user click on Log In button..........................passed
+Then on login page, "username" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Errors Verifications" name="Verify validation when the password field is empty during login process" time="3.860546">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on login button.........................................passed
+And on Login page, the user input into username box the value "test"........passed
+And on login page, the user click on Log In button..........................passed
+Then on login page, "password" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Details verification" name="Verify Details Information Page after successful login" time="13.585052">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "admin" and password "hero".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Details button.......................................passed
+Then Details page is displayed..............................................passed
+And the Name "Amazing Admin" is displayed...................................passed
+And the Email address "a.admin@wearewaes.com" is displayed..................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Details verification" name="Verify Details Information Page after successful login 2" time="6.54708">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "dev" and password "wizard".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Details button.......................................passed
+Then Details page is displayed..............................................passed
+And the Name "Zuper Dooper Dev" is displayed................................passed
+And the Email address "zd.dev@wearewaes.com" is displayed...................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Details verification" name="Verify Details Information Page after successful login 3" time="6.522761">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "tester" and password "maniac"....passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Details button.......................................passed
+Then Details page is displayed..............................................passed
+And the Name "Al Skept-Cal Tester" is displayed.............................passed
+And the Email address "as.tester@wearewaes.com" is displayed................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Profile Verifications" name="Verify Profile Information Page after successful login" time="14.58586">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "admin" and password "hero".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Profile button.......................................passed
+Then Profile page is displayed..............................................passed
+And the question information "How are you doing, Amazing Admin?" is displayed.passed
+And the power information "Your super power: Change the course of a waterfall." is displayed.passed
+And the extended information "is" displayed.................................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Profile Verifications" name="Verify Profile Information Page after successful login 2" time="26.788718">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "dev" and password "wizard".......passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Profile button.......................................passed
+Then Profile page is displayed..............................................passed
+And the question information "How are you doing, Zuper Dooper Dev?" is displayed.passed
+And the power information "Your super power: Debug a repellent factory storage." is displayed.passed
+And the extended information "is not" displayed.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: login - Profile Verifications" name="Verify Profile Information Page after successful login 3" time="26.385365">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform login with username "tester" and password "maniac"....passed
+Then after login, page 'Your Profile' is opened.............................passed
+When the user click on Profile button.......................................passed
+Then Profile page is displayed..............................................passed
+And the question information "How are you doing, Al Skept-Cal Tester?" is displayed.passed
+And the power information "Your super power: Voltage AND Current." is displayed.passed
+And the extended information "is not" displayed.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp" name="Sign Up with a new valid user" time="18.409619">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "test", password "test", name "test", email "test@test.com", day "25", month "April", year "1984".passed
+Then after signUp, page 'Your Profile' is opened............................passed
+And after signUp, the Welcome message "Welcome to your new profile page, test!" is displayed.passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp" name="Verify Sign Up error verification when the user is already registered (username/email)" time="10.437147">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "admin", password "test", name "New User", email "new@wearewaes.com", day "25", month "April", year "1984".passed
+Then unsuccessful SignUp error is displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp" name="Verify Sign Up error verification when the user is already registered (username/email) 2" time="9.959802">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "new", password "test", name "New User", email "as.tester@wearewaes.com", day "25", month "April", year "1984".passed
+Then unsuccessful SignUp error is displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp" name="Verify Sign Up error verification when the user is already registered (username/email) 3" time="9.876286">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "admin", password "test", name "New User", email "as.tester@wearewaes.com", day "25", month "April", year "1984".passed
+Then unsuccessful SignUp error is displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the username field is empty during SignUp process" time="10.722651">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "username" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the password field is empty during SignUp process" time="4.760894">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "password" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the name field is empty during SignUp process" time="5.521406">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "name" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the email field doesn't have the correct format during SignUp process" time="6.2675">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value ""..............passed
+Then on SignUp page, "email" field is validated with the text "Please fill out this field.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the email field doesn't have the correct format during SignUp process 2" time="6.496377">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value "new"...........passed
+Then on SignUp page, "email" field is validated with the text "Please include an '@' in the email address. 'new' is missing an '@'.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the email field doesn't have the correct format during SignUp process 3" time="6.792882">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value "new@"..........passed
+Then on SignUp page, "email" field is validated with the text "Please enter a part following '@'. 'new@' is incomplete.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the email field doesn't have the correct format during SignUp process 4" time="6.683638">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value "new@.com"......passed
+Then on SignUp page, "email" field is validated with the text "'.' is used at a wrong position in '.com'.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation when the email field doesn't have the correct format during SignUp process 5" time="6.658543">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value "new@new."......passed
+Then on SignUp page, "email" field is validated with the text "'.' is used at a wrong position in 'new.'.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Errors Verifications" name="Verify validation in the date fields during SignUp process" time="10.975721">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user click on SignUp button........................................passed
+Then SignUp Page is displayed...............................................passed
+When on SignUp page, the user input into username box the value "test"......passed
+And on SignUp page, the user input into password box the value "test".......passed
+And on SignUp page, the user input into name box the value "test"...........passed
+And on SignUp page, the user input into email box the value "test@test.com".passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "day" field is validated with the text "Please select an item in the list.".passed
+When on SignUp page, the user select as day the value "25"..................passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "month" field is validated with the text "Please select an item in the list.".passed
+When on SignUp page, the user select as month the value "April".............passed
+And on SignUp page, the user click on Submit button.........................passed
+Then on SignUp page, "year" field is validated with the text "Please select an item in the list.".passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Verify Details" name="Verify Details Information Page after successful SignUp" time="19.2864">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "test", password "test", name "test", email "test@test.com", day "25", month "April", year "1984".passed
+Then after signUp, page 'Your Profile' is opened............................passed
+When the user click on Details button.......................................passed
+Then Details page is displayed..............................................passed
+And the Name "test" is displayed............................................passed
+And the Email address "test@test.com" is displayed..........................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New WAES's portal, and the initial functionality: SignUp - Verify Profile" name="Verify Profile Information Page after successful SignUp" time="40.29891">
+<system-out><![CDATA[Given the user is on the WAES's portal page.................................passed
+When the user perform SignUp using: username "test", password "test", name "test", email "test@test.com", day "25", month "April", year "1984".passed
+Then after signUp, page 'Your Profile' is opened............................passed
+When the user click on Profile button.......................................passed
+Then Profile page is displayed..............................................passed
+And the question information "How are you doing, test?" is displayed........passed
+And the power information "Your super power: You have no super powers yet. =[." is displayed.passed
+And the extended information "is not" displayed.............................passed
+When the user click on Logout link..........................................passed
+Then after logout, Login Page is displayed..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

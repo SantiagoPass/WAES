@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HeaderMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">WAES Tester Assignment</a> &gt; <a href="index.source.html" class="el_package">com.waes.gui.components</a> &gt; <span class="el_source">HeaderMenu.java</span></div><h1>HeaderMenu.java</h1><pre class="source lang-java linenums">package com.waes.gui.components;
+
+import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import com.waes.gui.pages.*;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+/**
+ * In this class are mapped all elements into Header object.
+ * All methods to interact with each element were created here.
+ * &lt;p&gt;
+ * The methods Javadoc description was not added due to the name of they are very representative for
+ * the action that they perform.
+ *
+ * @author Santiago Passalacqua
+ * @version 1.0
+ * @since 10/14/2019
+ */
+public class HeaderMenu extends AbstractUIObject {
+
+    @FindBy(id = &quot;home_link&quot;)
+    private ExtendedWebElement homeLink;
+    @FindBy(id = &quot;login_link&quot;)
+    private ExtendedWebElement loginBtn;
+    @FindBy(id = &quot;signup_link&quot;)
+    private ExtendedWebElement signupBtn;
+    @FindBy(id = &quot;status&quot;)
+    private ExtendedWebElement statusBar;
+    @FindBy(id = &quot;profile_link&quot;)
+    private ExtendedWebElement profileBtn;
+    @FindBy(id = &quot;details_link&quot;)
+    private ExtendedWebElement detailsBtn;
+    @FindBy(xpath = &quot;//a[text()='log out']&quot;)
+    private ExtendedWebElement logOutLnk;
+
+    /**
+     * The constructor create a HeaderMenu object
+     *
+     * @param driver
+     * @param searchContext
+     */
+    public HeaderMenu(WebDriver driver, SearchContext searchContext) {
+<span class="fc" id="L45">        super(driver, searchContext);</span>
+<span class="fc" id="L46">    }</span>
+
+    public HomePage openHomePage() {
+<span class="nc" id="L49">        homeLink.click();</span>
+<span class="nc" id="L50">        return new HomePage(driver);</span>
+    }
+
+    public LoginPage clickOnLoginBtn() {
+<span class="fc" id="L54">        loginBtn.click();</span>
+<span class="fc" id="L55">        LoginPage loginPage = new LoginPage(driver);</span>
+<span class="fc" id="L56">        return loginPage;</span>
+    }
+
+    public SignUpPage clickOnSignUpBtn() {
+<span class="fc" id="L60">        signupBtn.click();</span>
+<span class="fc" id="L61">        SignUpPage signUpPage = new SignUpPage(driver);</span>
+<span class="fc" id="L62">        return signUpPage;</span>
+    }
+
+    public ProfilePage clickOnProfileBtn() {
+<span class="fc" id="L66">        profileBtn.click();</span>
+<span class="fc" id="L67">        ProfilePage profilePage = new ProfilePage(driver);</span>
+<span class="fc" id="L68">        return profilePage;</span>
+    }
+
+    public DetailsPage clickOnDetailsBtn() {
+<span class="fc" id="L72">        detailsBtn.click();</span>
+<span class="fc" id="L73">        DetailsPage detailsPage = new DetailsPage(driver);</span>
+<span class="fc" id="L74">        return detailsPage;</span>
+    }
+
+    public String getStatusText() {
+<span class="fc" id="L78">        return statusBar.getText();</span>
+    }
+
+    public LoginPage clickOnLogoutLnk() {
+<span class="fc" id="L82">        logOutLnk.click();</span>
+<span class="fc" id="L83">        LoginPage loginPage = new LoginPage(driver);</span>
+<span class="fc" id="L84">        return loginPage;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

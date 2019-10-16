@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoginPage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">WAES Tester Assignment</a> &gt; <a href="index.source.html" class="el_package">com.waes.gui.pages</a> &gt; <span class="el_source">LoginPage.java</span></div><h1>LoginPage.java</h1><pre class="source lang-java linenums">package com.waes.gui.pages;
+
+import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.core.gui.AbstractPage;
+import com.waes.gui.components.HeaderMenu;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+/**
+ * In this class are mapped all elements into Profile page.
+ * All methods to interact with each element were created here
+ * &lt;p&gt;
+ * The methods Javadoc description was not added due to the name of they are very representative for
+ * the action that they perform-
+ *
+ * @author Santiago Passalacqua
+ * @version 1.0
+ * @since 10/14/2019
+ */
+public class LoginPage extends AbstractPage {
+
+    @FindBy(tagName = &quot;header&quot;)
+    private HeaderMenu headerMenu;
+    @FindBy(xpath = &quot;//h1[text()='Log In']&quot;)
+    private ExtendedWebElement loginPageTitle;
+    @FindBy(id = &quot;username_input&quot;)
+    private ExtendedWebElement usernameTxt;
+    @FindBy(id = &quot;password_input&quot;)
+    private ExtendedWebElement passwordTxt;
+    @FindBy(id = &quot;login_button&quot;)
+    private ExtendedWebElement loginBtn;
+
+    @FindBy(id = &quot;1234&quot;)
+    private ExtendedWebElement usernameError;
+    @FindBy(id = &quot;1234&quot;)
+    private ExtendedWebElement passwordError;
+
+    /**
+     * The constructor create a LoginPage object
+     *
+     * @param driver
+     */
+    public LoginPage(WebDriver driver) {
+<span class="fc" id="L44">        super(driver);</span>
+<span class="fc" id="L45">    }</span>
+
+    /**
+     * This method return an header Menu object to interact with the elements into the header in the current page
+     *
+     * @return headerMenu Object
+     */
+    public HeaderMenu getHeaderMenu() {
+<span class="nc" id="L53">        return headerMenu;</span>
+    }
+
+    public boolean isLoginPageOpened() {
+<span class="fc" id="L57">        return loginPageTitle.isElementPresent();</span>
+    }
+
+    public void inputUsername(String username) {
+<span class="fc" id="L61">        assertElementPresent(usernameTxt);</span>
+<span class="fc" id="L62">        usernameTxt.type(username);</span>
+<span class="fc" id="L63">    }</span>
+
+    public void inputPassword(String password) {
+<span class="fc" id="L66">        assertElementPresent(passwordTxt);</span>
+<span class="fc" id="L67">        passwordTxt.type(password);</span>
+<span class="fc" id="L68">    }</span>
+
+    public ProfilePage clickOnLoginBtn() {
+<span class="fc" id="L71">        loginBtn.click();</span>
+<span class="fc" id="L72">        return new ProfilePage(driver);</span>
+    }
+
+    public String getUsernameValidationMessage() {
+<span class="fc" id="L76">        return usernameTxt.getAttribute(&quot;validationMessage&quot;);</span>
+    }
+
+    public String getPasswordValidationMessage() {
+<span class="fc" id="L80">        return passwordTxt.getAttribute(&quot;validationMessage&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

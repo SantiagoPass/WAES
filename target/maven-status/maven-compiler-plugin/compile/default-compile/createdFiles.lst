@@ -1,0 +1,6 @@
+com\waes\gui\pages\DetailsPage.class
+com\waes\gui\pages\ProfilePage.class
+com\waes\gui\pages\SignUpPage.class
+com\waes\gui\pages\LoginPage.class
+com\waes\gui\components\HeaderMenu.class
+com\waes\gui\pages\HomePage.class

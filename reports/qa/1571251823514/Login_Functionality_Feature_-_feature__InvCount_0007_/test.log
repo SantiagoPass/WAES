@@ -1,0 +1,27 @@
+[2019-10-16 03:54:42] [IMessager.java] [1] [INFO]  TEST [Login Functionality Feature - feature (InvCount=0007)] STARTED at [15:54:42 2019-10-16]
+[2019-10-16 03:54:45] [DesktopFactory.java] [1] [INFO] Browser window was maximized
+[2019-10-16 03:54:45] [IMessager.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is being opened...
+[2019-10-16 03:54:49] [DriverListener.java] [1] [INFO] INFO: url 'https://waesworks.bitbucket.io/' is opened.
+[2019-10-16 03:54:49] [DriverListener.java] [1] [INFO] PASS: element 'signupBtn' is clicked.
+[2019-10-16 03:54:50] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'usernameTxt'.
+[2019-10-16 03:54:51] [DriverListener.java] [1] [INFO] PASS: keys 'test' are sent to element 'usernameTxt'.
+[2019-10-16 03:54:52] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'passwordTxt'.
+[2019-10-16 03:54:52] [DriverListener.java] [1] [INFO] PASS: keys 'test' are sent to element 'passwordTxt'.
+[2019-10-16 03:54:53] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'nameTxt'.
+[2019-10-16 03:54:54] [DriverListener.java] [1] [INFO] PASS: keys 'test' are sent to element 'nameTxt'.
+[2019-10-16 03:54:54] [DriverListener.java] [1] [INFO] PASS: keys cleared in element 'emailTxt'.
+[2019-10-16 03:54:55] [DriverListener.java] [1] [INFO] PASS: keys 'test@test.com' are sent to element 'emailTxt'.
+[2019-10-16 03:54:56] [DriverListener.java] [1] [INFO] PASS: text '25' was selected in 'dayCmb'.
+[2019-10-16 03:54:56] [DriverListener.java] [1] [INFO] PASS: text 'April' was selected in 'monthCmb'.
+[2019-10-16 03:54:57] [DriverListener.java] [1] [INFO] PASS: text '1984' was selected in 'yearCmb'.
+[2019-10-16 03:54:58] [DriverListener.java] [1] [ERROR] FAIL: element 'submitBtn (By.id: submit_button)' is not clicked!
+[2019-10-16 03:54:59] [ExtendedWebElement.java] [1] [WARN] Trying to do click by Actions due to the: element click intercepted: Element <input id="submit_button" class="form-module--form__button--VpL0T" type="submit" value="Submit"> is not clickable at point (410, 590). Other element would receive the click: <a class="footer-module--footer__link--PSxhD" href="https://www.gatsbyjs.org">...</a>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HYASPASSALACQUA', ip: '192.168.160.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SPASSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 053e4685ca5cdd4d788128f655b...}
+Session ID: 053e4685ca5cdd4d788128f655b3914e
+[2019-10-16 03:54:59] [DriverListener.java] [1] [INFO] PASS: element 'detailsBtn' is clicked.
+[2019-10-16 03:55:00] [DriverListener.java] [1] [INFO] PASS: element 'logOutLnk' is clicked.
+[2019-10-16 03:55:01] [IMessager.java] [1] [INFO]  TEST [Login Functionality Feature - feature (InvCount=0007)] PASSED at [15:55:01 2019-10-16]

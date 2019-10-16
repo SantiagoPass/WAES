@@ -1,0 +1,307 @@
+Feature: New WAES's portal, and the initial functionality: login - Successful and Unsuccessful login
+
+  Scenario Outline: Login with valid user authentication                             [90m# src/test/resources/features/login_functionality_features/LoginFunctionality.feature:3[0m
+    [36mGiven [0m[36mthe user is on the WAES's portal page[0m
+    [36mWhen [0m[36mthe user perform login with username "<username>" and password "<password>"[0m
+    [36mThen [0m[36mafter login, page 'Your Profile' is opened[0m
+    [36mWhen [0m[36mthe user click on Logout link[0m
+    [36mThen [0m[36mafter logout, Login Page is displayed[0m
+
+    Examples: 
+
+  Scenario Outline: Login with valid user authentication                  [90m# src/test/resources/features/login_functionality_features/LoginFunctionality.feature:11[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                           [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1mhero[0m[32m"[0m [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                       [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                    [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                            [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Login with valid user authentication                  [90m# src/test/resources/features/login_functionality_features/LoginFunctionality.feature:12[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                           [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mdev[0m[32m" and password "[0m[32m[1mwizard[0m[32m"[0m [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                       [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                    [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                            [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Login with valid user authentication                     [90m# src/test/resources/features/login_functionality_features/LoginFunctionality.feature:13[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                              [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mtester[0m[32m" and password "[0m[32m[1mmaniac[0m[32m"[0m [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                          [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                       [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                               [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario: Login with invalid user authentication                                                                 [90m# src/test/resources/features/login_functionality_features/LoginFunctionality.feature:15[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mtest[0m[32m" and password "[0m[32m[1mtest[0m[32m"[0m                                           [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, the message "[0m[32m[1mWrong credentials. You can do it, try again![0m[32m" is displayed on header status bar[0m [90m# WAESLoginSteps.verifyLoginstatus(String)[0m
+Feature: New WAES's portal, and the initial functionality: login - Errors Verifications
+
+  Scenario: Verify validation when the username field is empty during login process               [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityErrorVerifications.feature:3[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                   [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on login button[0m                                                           [90m# WAESLoginSteps.goToLoginPage()[0m
+    [32mAnd [0m[32mon login page, the user click on Log In button[0m                                            [90m# WAESLoginSteps.performLogin()[0m
+    [32mThen [0m[32mon login page, "[0m[32m[1musername[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m [90m# WAESLoginSteps.verifyField(String,String)[0m
+
+  Scenario: Verify validation when the password field is empty during login process               [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityErrorVerifications.feature:9[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                   [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on login button[0m                                                           [90m# WAESLoginSteps.goToLoginPage()[0m
+    [32mAnd [0m[32mon Login page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                          [90m# WAESLoginSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon login page, the user click on Log In button[0m                                            [90m# WAESLoginSteps.performLogin()[0m
+    [32mThen [0m[32mon login page, "[0m[32m[1mpassword[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m [90m# WAESLoginSteps.verifyField(String,String)[0m
+Feature: New WAES's portal, and the initial functionality: login - Details verification
+
+  Scenario Outline: Verify Details Information Page after successful login           [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyDetails.feature:3[0m
+    [36mGiven [0m[36mthe user is on the WAES's portal page[0m
+    [36mWhen [0m[36mthe user perform login with username "<username>" and password "<password>"[0m
+    [36mThen [0m[36mafter login, page 'Your Profile' is opened[0m
+    [36mWhen [0m[36mthe user click on Details button[0m
+    [36mThen [0m[36mDetails page is displayed[0m
+    [36mAnd [0m[36mthe Name "<name>" is displayed[0m
+    [36mAnd [0m[36mthe Email address "<email>" is displayed[0m
+    [36mWhen [0m[36mthe user click on Logout link[0m
+    [36mThen [0m[36mafter logout, Login Page is displayed[0m
+
+    Examples: 
+
+  Scenario Outline: Verify Details Information Page after successful login [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyDetails.feature:15[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                            [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1mhero[0m[32m"[0m  [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                        [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Details button[0m                                  [90m# WAESDetailsSteps.theUserClickOnDetailsButton()[0m
+    [32mThen [0m[32mDetails page is displayed[0m                                         [90m# WAESDetailsSteps.detailsPageIsDisplayed()[0m
+    [32mAnd [0m[32mthe Name "[0m[32m[1mAmazing Admin[0m[32m" is displayed[0m                              [90m# WAESDetailsSteps.theNameIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe Email address "[0m[32m[1ma.admin@wearewaes.com[0m[32m" is displayed[0m             [90m# WAESDetailsSteps.theEmailIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                     [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                             [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Verify Details Information Page after successful login [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyDetails.feature:16[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                            [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mdev[0m[32m" and password "[0m[32m[1mwizard[0m[32m"[0m  [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                        [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Details button[0m                                  [90m# WAESDetailsSteps.theUserClickOnDetailsButton()[0m
+    [32mThen [0m[32mDetails page is displayed[0m                                         [90m# WAESDetailsSteps.detailsPageIsDisplayed()[0m
+    [32mAnd [0m[32mthe Name "[0m[32m[1mZuper Dooper Dev[0m[32m" is displayed[0m                           [90m# WAESDetailsSteps.theNameIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe Email address "[0m[32m[1mzd.dev@wearewaes.com[0m[32m" is displayed[0m              [90m# WAESDetailsSteps.theEmailIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                     [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                             [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Verify Details Information Page after successful login   [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyDetails.feature:17[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                              [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mtester[0m[32m" and password "[0m[32m[1mmaniac[0m[32m"[0m [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                          [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Details button[0m                                    [90m# WAESDetailsSteps.theUserClickOnDetailsButton()[0m
+    [32mThen [0m[32mDetails page is displayed[0m                                           [90m# WAESDetailsSteps.detailsPageIsDisplayed()[0m
+    [32mAnd [0m[32mthe Name "[0m[32m[1mAl Skept-Cal Tester[0m[32m" is displayed[0m                          [90m# WAESDetailsSteps.theNameIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe Email address "[0m[32m[1mas.tester@wearewaes.com[0m[32m" is displayed[0m             [90m# WAESDetailsSteps.theEmailIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                       [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                               [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+Feature: New WAES's portal, and the initial functionality: login - Profile Verifications
+
+  Scenario Outline: Verify Profile Information Page after successful login           [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyProfile.feature:3[0m
+    [36mGiven [0m[36mthe user is on the WAES's portal page[0m
+    [36mWhen [0m[36mthe user perform login with username "<username>" and password "<password>"[0m
+    [36mThen [0m[36mafter login, page 'Your Profile' is opened[0m
+    [36mWhen [0m[36mthe user click on Profile button[0m
+    [36mThen [0m[36mProfile page is displayed[0m
+    [36mAnd [0m[36mthe question information "<questionInfo>" is displayed[0m
+    [36mAnd [0m[36mthe power information "<powerInfo>" is displayed[0m
+    [36mAnd [0m[36mthe extended information "<is_isNot>" displayed[0m
+    [36mWhen [0m[36mthe user click on Logout link[0m
+    [36mThen [0m[36mafter logout, Login Page is displayed[0m
+
+    Examples: 
+
+  Scenario Outline: Verify Profile Information Page after successful login                       [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyProfile.feature:16[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                  [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1mhero[0m[32m"[0m                        [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                                              [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Profile button[0m                                                        [90m# WAESProfileSteps.theUserClickOnProfileButton()[0m
+    [32mThen [0m[32mProfile page is displayed[0m                                                               [90m# WAESProfileSteps.profilePageIsDisplayed()[0m
+    [32mAnd [0m[32mthe question information "[0m[32m[1mHow are you doing, Amazing Admin?[0m[32m" is displayed[0m                [90m# WAESProfileSteps.theQuestionInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe power information "[0m[32m[1mYour super power: Change the course of a waterfall.[0m[32m" is displayed[0m [90m# WAESProfileSteps.thePowerInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe extended information "[0m[32m[1mis[0m[32m" displayed[0m                                                  [90m# WAESProfileSteps.theExtendedInformationIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                           [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                                   [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Verify Profile Information Page after successful login                        [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyProfile.feature:17[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                   [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mdev[0m[32m" and password "[0m[32m[1mwizard[0m[32m"[0m                         [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                                               [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Profile button[0m                                                         [90m# WAESProfileSteps.theUserClickOnProfileButton()[0m
+    [32mThen [0m[32mProfile page is displayed[0m                                                                [90m# WAESProfileSteps.profilePageIsDisplayed()[0m
+    [32mAnd [0m[32mthe question information "[0m[32m[1mHow are you doing, Zuper Dooper Dev?[0m[32m" is displayed[0m              [90m# WAESProfileSteps.theQuestionInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe power information "[0m[32m[1mYour super power: Debug a repellent factory storage.[0m[32m" is displayed[0m [90m# WAESProfileSteps.thePowerInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe extended information "[0m[32m[1mis not[0m[32m" displayed[0m                                               [90m# WAESProfileSteps.theExtendedInformationIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                            [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                                    [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Verify Profile Information Page after successful login              [90m# src/test/resources/features/login_functionality_features/LoginFunctionalityVerifyProfile.feature:18[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                         [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform login with username "[0m[32m[1mtester[0m[32m" and password "[0m[32m[1mmaniac[0m[32m"[0m            [90m# WAESLoginSteps.performLogin(String,String)[0m
+    [32mThen [0m[32mafter login, page 'Your Profile' is opened[0m                                     [90m# WAESLoginSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Profile button[0m                                               [90m# WAESProfileSteps.theUserClickOnProfileButton()[0m
+    [32mThen [0m[32mProfile page is displayed[0m                                                      [90m# WAESProfileSteps.profilePageIsDisplayed()[0m
+    [32mAnd [0m[32mthe question information "[0m[32m[1mHow are you doing, Al Skept-Cal Tester?[0m[32m" is displayed[0m [90m# WAESProfileSteps.theQuestionInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe power information "[0m[32m[1mYour super power: Voltage AND Current.[0m[32m" is displayed[0m     [90m# WAESProfileSteps.thePowerInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe extended information "[0m[32m[1mis not[0m[32m" displayed[0m                                     [90m# WAESProfileSteps.theExtendedInformationIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                  [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                          [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+Feature: New WAES's portal, and the initial functionality: SignUp - Successful and Unsuccessful SignUp
+
+  Scenario: Sign Up with a new valid user                                                                                                          [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature:3[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1mtest[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mtest[0m[32m", email "[0m[32m[1mtest@test.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32mafter signUp, page 'Your Profile' is opened[0m                                                                                               [90m# WAESSignUpSteps.pageProfileShouldBeOpen()[0m
+    [32mAnd [0m[32mafter signUp, the Welcome message "[0m[32m[1mWelcome to your new profile page, test![0m[32m" is displayed[0m                                                   [90m# WAESSignUpSteps.theWelcomeMessageIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                                                                             [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                                                                                     [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+
+  Scenario Outline: Verify Sign Up error verification when the user is already registered (username/email)                                             [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature:11[0m
+    [36mGiven [0m[36mthe user is on the WAES's portal page[0m
+    [36mWhen [0m[36mthe user perform SignUp using: username "<username>", password "test", name "New User", email "<email>", day "25", month "April", year "1984"[0m
+    [36mThen [0m[36munsuccessful SignUp error is displayed[0m
+
+    Examples: 
+
+  Scenario Outline: Verify Sign Up error verification when the user is already registered (username/email)                                                  [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature:17[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                             [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1madmin[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mNew User[0m[32m", email "[0m[32m[1mnew@wearewaes.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32munsuccessful SignUp error is displayed[0m                                                                                                             [90m# WAESSignUpSteps.unsuccessfulSignUp()[0m
+
+  Scenario Outline: Verify Sign Up error verification when the user is already registered (username/email)                                                      [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature:18[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                                 [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1mnew[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mNew User[0m[32m", email "[0m[32m[1mas.tester@wearewaes.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32munsuccessful SignUp error is displayed[0m                                                                                                                 [90m# WAESSignUpSteps.unsuccessfulSignUp()[0m
+
+  Scenario Outline: Verify Sign Up error verification when the user is already registered (username/email)                                                        [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionality.feature:19[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                                   [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1madmin[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mNew User[0m[32m", email "[0m[32m[1mas.tester@wearewaes.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32munsuccessful SignUp error is displayed[0m                                                                                                                   [90m# WAESSignUpSteps.unsuccessfulSignUp()[0m
+Feature: New WAES's portal, and the initial functionality: SignUp - Errors Verifications
+
+  Scenario: Verify validation when the username field is empty during SignUp process               [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:3[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                           [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                            [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1musername[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario: Verify validation when the password field is empty during SignUp process               [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:9[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                           [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                  [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                         [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                            [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1mpassword[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario: Verify validation when the name field is empty during SignUp process               [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:17[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                       [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                              [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                     [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                      [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                        [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1mname[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:26[0m
+    [36mGiven [0m[36mthe user is on the WAES's portal page[0m
+    [36mWhen [0m[36mthe user click on SignUp button[0m
+    [36mThen [0m[36mSignUp Page is displayed[0m
+    [36mWhen [0m[36mon SignUp page, the user input into username box the value "test"[0m
+    [36mAnd [0m[36mon SignUp page, the user input into password box the value "test"[0m
+    [36mAnd [0m[36mon SignUp page, the user input into name box the value "test"[0m
+    [36mAnd [0m[36mon SignUp page, the user input into email box the value "<email>"[0m
+    [36mThen [0m[36mon SignUp page, "email" field is validated with the text "<message_error>"[0m
+
+    Examples: 
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:37[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                  [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                                         [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                                [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                                       [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                                        [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                            [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1m[0m[32m"[0m                                               [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1memail[0m[32m" field is validated with the text "[0m[32m[1mPlease fill out this field.[0m[32m"[0m                  [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process                         [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:38[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                          [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                                                                 [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                                                        [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                                                               [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                                                                [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                                                    [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1mnew[0m[32m"[0m                                                                    [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1memail[0m[32m" field is validated with the text "[0m[32m[1mPlease include an '@' in the email address. 'new' is missing an '@'.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process             [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:39[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                              [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                                                     [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                                            [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                                                   [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                                                    [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                                        [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1mnew@[0m[32m"[0m                                                       [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1memail[0m[32m" field is validated with the text "[0m[32m[1mPlease enter a part following '@'. 'new@' is incomplete.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:40[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                  [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                                         [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                                [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                                       [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                                        [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                            [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1mnew@.com[0m[32m"[0m                                       [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1memail[0m[32m" field is validated with the text "[0m[32m[1m'.' is used at a wrong position in '.com'.[0m[32m"[0m   [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario Outline: Verify validation when the email field doesn't have the correct format during SignUp process [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:41[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                  [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                                         [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                                [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                                       [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                                        [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                            [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1mnew@new.[0m[32m"[0m                                       [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1memail[0m[32m" field is validated with the text "[0m[32m[1m'.' is used at a wrong position in 'new.'.[0m[32m"[0m   [90m# WAESSignUpSteps.verifyField(String,String)[0m
+
+  Scenario: Verify validation in the date fields during SignUp process                                 [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityErrorsVerifications.feature:43[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                        [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user click on SignUp button[0m                                                               [90m# WAESSignUpSteps.goSignUpPage()[0m
+    [32mThen [0m[32mSignUp Page is displayed[0m                                                                      [90m# WAESSignUpSteps.signupPageIsDisplayed()[0m
+    [32mWhen [0m[32mon SignUp page, the user input into username box the value "[0m[32m[1mtest[0m[32m"[0m                             [90m# WAESSignUpSteps.inputUsername(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into password box the value "[0m[32m[1mtest[0m[32m"[0m                              [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoPasswordBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into name box the value "[0m[32m[1mtest[0m[32m"[0m                                  [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoNameBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user input into email box the value "[0m[32m[1mtest@test.com[0m[32m"[0m                        [90m# WAESSignUpSteps.onSignUpPageTheUserInputIntoEmailBoxTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                                [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1mday[0m[32m" field is validated with the text "[0m[32m[1mPlease select an item in the list.[0m[32m"[0m   [90m# WAESSignUpSteps.verifyField(String,String)[0m
+    [32mWhen [0m[32mon SignUp page, the user select as day the value "[0m[32m[1m25[0m[32m"[0m                                         [90m# WAESSignUpSteps.onSignUpPageTheUserSelectAsDayTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                                [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1mmonth[0m[32m" field is validated with the text "[0m[32m[1mPlease select an item in the list.[0m[32m"[0m [90m# WAESSignUpSteps.verifyField(String,String)[0m
+    [32mWhen [0m[32mon SignUp page, the user select as month the value "[0m[32m[1mApril[0m[32m"[0m                                    [90m# WAESSignUpSteps.onSignUpPageTheUserSelectAsMonthTheValue(String)[0m
+    [32mAnd [0m[32mon SignUp page, the user click on Submit button[0m                                                [90m# WAESSignUpSteps.onSignUpPageTheUserClickOnSubmitButton()[0m
+    [32mThen [0m[32mon SignUp page, "[0m[32m[1myear[0m[32m" field is validated with the text "[0m[32m[1mPlease select an item in the list.[0m[32m"[0m  [90m# WAESSignUpSteps.verifyField(String,String)[0m
+Feature: New WAES's portal, and the initial functionality: SignUp - Verify Details
+
+  Scenario: Verify Details Information Page after successful SignUp                                                                                [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityVerifyDetails.feature:3[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1mtest[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mtest[0m[32m", email "[0m[32m[1mtest@test.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32mafter signUp, page 'Your Profile' is opened[0m                                                                                               [90m# WAESSignUpSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Details button[0m                                                                                                          [90m# WAESDetailsSteps.theUserClickOnDetailsButton()[0m
+    [32mThen [0m[32mDetails page is displayed[0m                                                                                                                 [90m# WAESDetailsSteps.detailsPageIsDisplayed()[0m
+    [32mAnd [0m[32mthe Name "[0m[32m[1mtest[0m[32m" is displayed[0m                                                                                                               [90m# WAESDetailsSteps.theNameIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe Email address "[0m[32m[1mtest@test.com[0m[32m" is displayed[0m                                                                                             [90m# WAESDetailsSteps.theEmailIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                                                                             [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                                                                                     [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
+Feature: New WAES's portal, and the initial functionality: SignUp - Verify Profile
+
+  Scenario: Verify Profile Information Page after successful SignUp                                                                                [90m# src/test/resources/features/signup_functionality_features/SignUpFunctionalityVerifyProfile.feature:3[0m
+    [32mGiven [0m[32mthe user is on the WAES's portal page[0m                                                                                                    [90m# WAESHomeSteps.userIsOnHomePage()[0m
+    [32mWhen [0m[32mthe user perform SignUp using: username "[0m[32m[1mtest[0m[32m", password "[0m[32m[1mtest[0m[32m", name "[0m[32m[1mtest[0m[32m", email "[0m[32m[1mtest@test.com[0m[32m", day "[0m[32m[1m25[0m[32m", month "[0m[32m[1mApril[0m[32m", year "[0m[32m[1m1984[0m[32m"[0m [90m# WAESSignUpSteps.signUpNewUser(String,String,String,String,String,String,String)[0m
+    [32mThen [0m[32mafter signUp, page 'Your Profile' is opened[0m                                                                                               [90m# WAESSignUpSteps.pageProfileShouldBeOpen()[0m
+    [32mWhen [0m[32mthe user click on Profile button[0m                                                                                                          [90m# WAESProfileSteps.theUserClickOnProfileButton()[0m
+    [32mThen [0m[32mProfile page is displayed[0m                                                                                                                 [90m# WAESProfileSteps.profilePageIsDisplayed()[0m
+    [32mAnd [0m[32mthe question information "[0m[32m[1mHow are you doing, test?[0m[32m" is displayed[0m                                                                           [90m# WAESProfileSteps.theQuestionInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe power information "[0m[32m[1mYour super power: You have no super powers yet. =[.[0m[32m" is displayed[0m                                                   [90m# WAESProfileSteps.thePowerInformationIsDisplayed(String)[0m
+    [32mAnd [0m[32mthe extended information "[0m[32m[1mis not[0m[32m" displayed[0m                                                                                                [90m# WAESProfileSteps.theExtendedInformationIsDisplayed(String)[0m
+    [32mWhen [0m[32mthe user click on Logout link[0m                                                                                                             [90m# WAESHomeSteps.logoutSession()[0m
+    [32mThen [0m[32mafter logout, Login Page is displayed[0m                                                                                                     [90m# WAESHomeSteps.isLoginPageDisplayed()[0m
